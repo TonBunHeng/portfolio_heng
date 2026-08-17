@@ -52,7 +52,7 @@ export const projects = [
     problemSolved: 'Crafted a fast, accessible, and responsive showcase that presents projects, resume details, and technical articles with the visual sophistication of modern web architecture.',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
     tags: ['Vue.js', 'Vite', 'Tailwind CSS', 'JavaScript'],
-    liveUrl: 'https://portfolio-heng-five.vercel.app/',
+    liveUrl: 'https://portfolio-heng-rose.vercel.app/',
     codeUrl: ''
   }
 ];

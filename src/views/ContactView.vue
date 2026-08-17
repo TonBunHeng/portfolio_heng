@@ -164,12 +164,12 @@
             </span>
             <div style="display: flex; flex-direction: column; gap: 0.75rem;">
               <a
-                href="https://github.com/tonbunheng1122-cloud"
+                href="https://github.com/TonBunHeng"
                 target="_blank"
                 rel="noopener noreferrer"
                 style="font-family: var(--font-mono); font-size: var(--text-sm); color: var(--color-fg); display: inline-flex; align-items: center; gap: 0.5rem;"
               >
-                GitHub · tonbunheng1122-cloud ↗
+                GitHub · TonBunHeng ↗
               </a>
               <a
                 href="https://linkedin.com/in/tonbunheng"

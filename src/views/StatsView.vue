@@ -83,8 +83,8 @@
             <tr>
               <th scope="row" class="stat-table-label">GitHub repositories</th>
               <td class="stat-table-value">
-                <a href="https://github.com/tonbunheng1122-cloud" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent);">
-                  tonbunheng1122-cloud ↗
+                <a href="https://github.com/TonBunHeng" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent);">
+                  TonBunHeng ↗
                 </a>
               </td>
             </tr>
