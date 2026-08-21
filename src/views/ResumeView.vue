@@ -8,19 +8,19 @@
             Full-Stack Web Developer · Vue.js &amp; Laravel Specialist
           </p>
         </div>
-        <a
-          href="/picture/TonBunHeng.pdf"
-          download="TonBunHeng_CV.pdf"
+        <button
+          type="button"
           class="button"
           style="height: 2.5rem; font-size: var(--text-xs);"
+          @click="isCvModalOpen = true"
         >
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
             <polyline points="7 10 12 15 17 10" />
             <line x1="12" y1="15" x2="12" y2="3" />
           </svg>
-          <span>Download CV (PDF)</span>
-        </a>
+          <span>Download CV</span>
+        </button>
       </div>
     </header>
 
@@ -207,12 +207,17 @@
         Professional references, code samples, and client recommendations are available upon request.
       </p>
     </section>
+    <!-- CV Download Modal -->
+    <CvDownloadModal :is-open="isCvModalOpen" @close="isCvModalOpen = false" />
   </div>
 </template>
 
 <script setup>
 import { ref, computed } from 'vue';
 import TechIcon from '../components/TechIcon.vue';
+import CvDownloadModal from '../components/CvDownloadModal.vue';
+
+const isCvModalOpen = ref(false);
 
 const experience = [
   {

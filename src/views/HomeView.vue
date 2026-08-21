@@ -151,63 +151,12 @@
         </article>
       </div>
     </section>
-
-    <!-- Latest Technical Writing Section -->
-    <section style="padding: 4rem 0 2rem;" aria-labelledby="latest-writing-title">
-      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem;">
-        <div>
-          <span style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-accent); font-weight: 600; text-transform: uppercase; letter-spacing: var(--tracking-label); display: block; margin-bottom: 0.25rem;">
-            From The Desk
-          </span>
-          <h2 id="latest-writing-title" style="margin-bottom: 0;">Technical Articles</h2>
-        </div>
-        <router-link to="/writing" style="font-family: var(--font-mono); font-size: var(--text-ui); font-weight: 600; color: var(--color-accent);">
-          Read all articles →
-        </router-link>
-      </div>
-
-      <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-        <article
-          v-for="post in latestArticles"
-          :key="post.slug"
-          style="padding: 1.5rem; background: var(--color-card-bg); border: var(--rule) solid var(--color-border); border-radius: var(--radius-md); transition: border-color var(--duration-fast) var(--ease-out), transform var(--duration-fast) var(--ease-out);"
-          class="writing-item-card"
-        >
-          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem; margin-bottom: 0.35rem;">
-            <span style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">
-              {{ post.category }}
-            </span>
-            <span style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-fg-muted);">
-              {{ post.date }}
-            </span>
-          </div>
-
-          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">
-            <router-link :to="`/writing/${post.slug}`" style="color: var(--color-fg-bold);">
-              {{ post.title }}
-            </router-link>
-          </h3>
-
-          <p style="font-family: var(--font-body); font-size: var(--text-sm); color: var(--color-fg-light); line-height: 1.55; margin-bottom: 0.75rem;">
-            {{ post.summary }}
-          </p>
-
-          <router-link
-            :to="`/writing/${post.slug}`"
-            style="font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 600; color: var(--color-accent);"
-          >
-            Read full article →
-          </router-link>
-        </article>
-      </div>
-    </section>
   </div>
 </template>
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue';
 import TechIcon from '../components/TechIcon.vue';
-import { articles } from '../data/articles.js';
 import { projects } from '../data/projects.js';
 
 // Profile Pictures Cycling (every 3 seconds)
@@ -255,8 +204,6 @@ const coreTechs = [
 ];
 
 const featuredProjects = computed(() => projects.filter(p => p.isFeatured));
-
-const latestArticles = computed(() => articles.slice(0, 3));
 </script>
 
 <style scoped>
@@ -325,11 +272,5 @@ const latestArticles = computed(() => articles.slice(0, 3));
   transform: translateY(-3px);
   border-color: var(--color-border-alt);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
-}
-
-.writing-item-card:hover {
-  border-color: var(--color-accent-underline-strong);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 </style>

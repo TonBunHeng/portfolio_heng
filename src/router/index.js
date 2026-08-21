@@ -3,8 +3,6 @@ import HomeView from '../views/HomeView.vue';
 import AboutView from '../views/AboutView.vue';
 import ResumeView from '../views/ResumeView.vue';
 import ProjectsView from '../views/ProjectsView.vue';
-import WritingView from '../views/WritingView.vue';
-import ArticleView from '../views/ArticleView.vue';
 import StatsView from '../views/StatsView.vue';
 import ContactView from '../views/ContactView.vue';
 
@@ -32,18 +30,6 @@ const routes = [
     name: 'Projects',
     component: ProjectsView,
     meta: { title: 'Projects | Ton Bunheng' }
-  },
-  {
-    path: '/writing',
-    name: 'Writing',
-    component: WritingView,
-    meta: { title: 'Writing | Ton Bunheng' }
-  },
-  {
-    path: '/writing/:slug',
-    name: 'Article',
-    component: ArticleView,
-    meta: { title: 'Article | Ton Bunheng' }
   },
   {
     path: '/stats',

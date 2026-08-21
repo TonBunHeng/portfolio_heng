@@ -11,7 +11,6 @@
       <router-link to="/about" class="nav-link" active-class="active">About</router-link>
       <router-link to="/resume" class="nav-link" active-class="active">Resume</router-link>
       <router-link to="/projects" class="nav-link" active-class="active">Projects</router-link>
-      <router-link to="/writing" class="nav-link" active-class="active">Writing</router-link>
       <router-link to="/stats" class="nav-link" active-class="active">Stats</router-link>
       <router-link to="/contact" class="nav-link" active-class="active">Contact</router-link>
     </nav>
@@ -97,7 +96,6 @@
             <router-link to="/about" class="nav-link" active-class="active" @click="isMobileMenuOpen = false" style="font-size: 1rem; padding: 0.75rem 1rem;">About</router-link>
             <router-link to="/resume" class="nav-link" active-class="active" @click="isMobileMenuOpen = false" style="font-size: 1rem; padding: 0.75rem 1rem;">Resume</router-link>
             <router-link to="/projects" class="nav-link" active-class="active" @click="isMobileMenuOpen = false" style="font-size: 1rem; padding: 0.75rem 1rem;">Projects</router-link>
-            <router-link to="/writing" class="nav-link" active-class="active" @click="isMobileMenuOpen = false" style="font-size: 1rem; padding: 0.75rem 1rem;">Writing</router-link>
             <router-link to="/stats" class="nav-link" active-class="active" @click="isMobileMenuOpen = false" style="font-size: 1rem; padding: 0.75rem 1rem;">Stats</router-link>
             <router-link to="/contact" class="nav-link" active-class="active" @click="isMobileMenuOpen = false" style="font-size: 1rem; padding: 0.75rem 1rem;">Contact</router-link>
           </nav>
